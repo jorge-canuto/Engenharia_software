@@ -1,16 +1,36 @@
-# nps_project
+# MPS
 
-A new Flutter project.
+O software Maintenance Plan Software (MPS) tem por objetivo oferecer uma ferramenta para auxiliar os gestores de manutenção, além de oferecer diagramas elétricos e mecânicos dos maquinários cadastrados e um histórico de falhas de cada máquina, fornecendo maior agilidade e controle sobre as manutenções programadas.
 
-## Getting Started
+## Funcionalidades
 
-This project is a starting point for a Flutter application.
+* Requerimento de manutenção - O aplicativo possibilita a criação de requerimento de manutenção, alertando a necessidade de realização de manutenção em um equipamento.
+* Dados do Maquinário - São informações detalhadas e específicas relacionadas ao funcionamento, desempenho, capacidades, e características técnicas dos equipamentos.
+* Ver Ordens de serviço - Verificar ordens de serviço abertas, em andamento e fechadas.
+* Requisição de estoque - O aplicativo possibilita a requisição de peças para manutenção em equipamentos. 
 
-A few resources to get you started if this is your first Flutter project:
+### 📋 Pré-requisitos
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+* Smartphone com sistema Android 8.0 ou superior.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Construído com
+
+Mencione as ferramentas que você usou para criar seu projeto
+
+* [Flutter](https://flutter.dev/) - Um framework Dart para desenvolvimento de aplicações móveis.
+* [Visual Studio Code](https://code.visualstudio.com/) - Editor de código-fonte.
+
+## 📌 Versão
+
+1.0
+
+## ✒️ Autores
+
+* **Jorge Luiz** - *Documentação, revisão e desenvolvimento do software*
+* **Sérgio Alvarez** - *Documentação, revisão e desenvolvimento do software*
+* **Luiz Fellipe** - *Documentação, revisão e desenvolvimento do software*
+* **Guilherme Américo** - *Documentação, revisão e desenvolvimento do software*
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
