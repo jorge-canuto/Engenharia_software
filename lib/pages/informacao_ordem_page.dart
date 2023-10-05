@@ -321,9 +321,6 @@ class _InformacaoOrdemPageState extends State<InformacaoOrdemPage> {
                                   ],
                                 ), 
                         )
-
-                      
-
                     ],
                   ),
 
