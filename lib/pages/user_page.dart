@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import './requerimento_page.dart';
 import './dados_maquinario_page.dart';
+import './ordens_servico_page.dart';
 
 class UserPage extends StatelessWidget {
   const UserPage({ Key? key }) : super(key: key);
@@ -135,36 +136,45 @@ class UserPage extends StatelessWidget {
                         ),
                         Expanded(
                           flex: 1,
-                          child: Container(
-                            padding: const EdgeInsets.all(10),
-                            margin: const EdgeInsets.all(5),
-                            decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    border: Border.all(
-                                      width: 2,
-                                      color: Colors.green,
+                          child: InkWell(
+                            child: Container(
+                                  padding: const EdgeInsets.all(10),
+                                  margin: const EdgeInsets.all(5),
+                                  decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          border: Border.all(
+                                            width: 2,
+                                            color: Colors.green,
+                                        ),
+                                        borderRadius: const BorderRadius.all(Radius.circular(20))
+                                      ),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      Icon(
+                                        Icons.file_copy,
+                                        color: Colors.green,
+                                        size: 50,
+                                      ),
+                                      Text(
+                                        'Ver Ordens de Serviço',
+                                        style: TextStyle(
+                                          color: Colors.green,
+                                          fontSize: 20
+                                        ),
+                                        textAlign: TextAlign.center,
+                                      )
+                                    ],
                                   ),
-                                  borderRadius: const BorderRadius.all(Radius.circular(20))
                                 ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: const [
-                                Icon(
-                                  Icons.file_copy,
-                                  color: Colors.green,
-                                  size: 50,
-                                ),
-                                Text(
-                                  'Ver Ordens de Serviço',
-                                  style: TextStyle(
-                                    color: Colors.green,
-                                    fontSize: 20
-                                  ),
-                                  textAlign: TextAlign.center,
-                                )
-                              ],
-                            ),
-                          ),
+                                onTap: () {
+                                  Navigator.push(context, 
+                                  MaterialPageRoute(
+                                    builder: ((context) => const OrdemServicoPage())
+                                  )
+                                  );
+                                },
+                          )
                         ),
                         Expanded(
                           flex: 1,
